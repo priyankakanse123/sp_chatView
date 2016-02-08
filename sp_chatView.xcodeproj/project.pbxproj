@@ -15,6 +15,10 @@
 		0A0AD88E1C55E92E005B9A50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0AD88C1C55E92E005B9A50 /* LaunchScreen.storyboard */; };
 		0A0AD8991C55E92F005B9A50 /* sp_chatViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AD8981C55E92F005B9A50 /* sp_chatViewTests.swift */; };
 		0A0AD8A41C55E92F005B9A50 /* sp_chatViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AD8A31C55E92F005B9A50 /* sp_chatViewUITests.swift */; };
+		0A67E4161C56061700AD7D0D /* chatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67E4151C56061700AD7D0D /* chatView.swift */; };
+		0A67E4181C56106800AD7D0D /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67E4171C56106800AD7D0D /* ChatCell.swift */; };
+		0A67E41A1C56141100AD7D0D /* default.png.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0A67E4191C56141000AD7D0D /* default.png.jpeg */; };
+		0A67E41C1C5639CD00AD7D0D /* chatDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67E41B1C5639CD00AD7D0D /* chatDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		0A0AD89F1C55E92F005B9A50 /* sp_chatViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sp_chatViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0AD8A31C55E92F005B9A50 /* sp_chatViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sp_chatViewUITests.swift; sourceTree = "<group>"; };
 		0A0AD8A51C55E92F005B9A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A67E4151C56061700AD7D0D /* chatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chatView.swift; sourceTree = "<group>"; };
+		0A67E4171C56106800AD7D0D /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		0A67E4191C56141000AD7D0D /* default.png.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.png.jpeg; sourceTree = "<group>"; };
+		0A67E41B1C5639CD00AD7D0D /* chatDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chatDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +109,15 @@
 			children = (
 				0A0AD8801C55E92E005B9A50 /* AppDelegate.swift */,
 				0A0AD8821C55E92E005B9A50 /* ViewController.swift */,
+				0A67E4151C56061700AD7D0D /* chatView.swift */,
+				0A67E4171C56106800AD7D0D /* ChatCell.swift */,
+				0A67E41B1C5639CD00AD7D0D /* chatDetailController.swift */,
 				0A0AD8841C55E92E005B9A50 /* Main.storyboard */,
 				0A0AD88A1C55E92E005B9A50 /* Assets.xcassets */,
 				0A0AD88C1C55E92E005B9A50 /* LaunchScreen.storyboard */,
 				0A0AD88F1C55E92E005B9A50 /* Info.plist */,
 				0A0AD8871C55E92E005B9A50 /* sp_chatView.xcdatamodeld */,
+				0A67E4191C56141000AD7D0D /* default.png.jpeg */,
 			);
 			path = sp_chatView;
 			sourceTree = "<group>";
@@ -232,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A67E41A1C56141100AD7D0D /* default.png.jpeg in Resources */,
 				0A0AD88E1C55E92E005B9A50 /* LaunchScreen.storyboard in Resources */,
 				0A0AD88B1C55E92E005B9A50 /* Assets.xcassets in Resources */,
 				0A0AD8861C55E92E005B9A50 /* Main.storyboard in Resources */,
@@ -259,8 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A67E41C1C5639CD00AD7D0D /* chatDetailController.swift in Sources */,
+				0A67E4161C56061700AD7D0D /* chatView.swift in Sources */,
 				0A0AD8891C55E92E005B9A50 /* sp_chatView.xcdatamodeld in Sources */,
 				0A0AD8831C55E92E005B9A50 /* ViewController.swift in Sources */,
+				0A67E4181C56106800AD7D0D /* ChatCell.swift in Sources */,
 				0A0AD8811C55E92E005B9A50 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +502,7 @@
 				0A0AD8AA1C55E92F005B9A50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A0AD8AB1C55E92F005B9A50 /* Build configuration list for PBXNativeTarget "sp_chatViewTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +511,7 @@
 				0A0AD8AD1C55E92F005B9A50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A0AD8AE1C55E92F005B9A50 /* Build configuration list for PBXNativeTarget "sp_chatViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +520,7 @@
 				0A0AD8B01C55E92F005B9A50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
